@@ -10,7 +10,7 @@ from PySide.QtCore import QFile
 from PySide.QtGui import QApplication, QMainWindow, QDialog
 
 from loginWindow import LoginDialog
-from NaplatnoMestoWindow import NaplatnoMestoWindow
+from MainWindow import MainWindow
 
 
 if __name__ == '__main__':
@@ -26,7 +26,7 @@ if __name__ == '__main__':
     else:
         sys.exit()
       
-    app.mainWindow = NaplatnoMestoWindow()
+    app.mainWindow = MainWindow()
     app.mainWindow.show()
     
     sys.exit(app.exec_())
